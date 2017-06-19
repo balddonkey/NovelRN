@@ -1,0 +1,3 @@
+rootProject.name = 'NovelRN'
+
+include ':app'
