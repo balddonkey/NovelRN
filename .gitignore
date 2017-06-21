@@ -51,3 +51,9 @@ buck-out/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
+
+# ModuleCreater
+#
+# It is a Module create util, Help you to create module easy.
+# See: https://github.com/balddonkey/ModuleCreater.git
+mcreater.config.json
