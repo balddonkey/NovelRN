@@ -4,7 +4,7 @@ import { View, Image, TextInput, Alert } from 'react-native';
 
 const screen = require('Dimensions').get('window');
 
-var searchIcon = require('./search.png');
+var searchIcon = require('../../ZZSrcs/search.png');
 
 class SearchBar extends Component {
 
@@ -38,26 +38,36 @@ class SearchBar extends Component {
         // if (props === undefined) {
         super(props);
         this.state = {
-            display: 'flex'
+            display: 'flex',
+            text: ''
         };
     }
 
     handleChangeText(text) {
+        this.setState({
+            text: text
+        });
         if (this.props.onChangeText != null) {
             this.props.onChangeText(text);
         }
     }
 
     handleEndEditing(text) {
-        
+        if (this.props.onEndEditing != null) {
+            this.props.onEndEditing(text);
+        }
     }
 
     handleFocus(text) {
-        
+        if (this.props.onFocus != null) {
+            this.props.onFocus(text);
+        }
     }
 
-    handleSubmitEditing(text) {
-        
+    handleSubmitEditing() {
+        if (this.props.onSubmitEditing != null) {
+            this.props.onSubmitEditing(this.state.text);
+        }
     }
 
     render() {
