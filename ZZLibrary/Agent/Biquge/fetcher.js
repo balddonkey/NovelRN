@@ -6,10 +6,11 @@ const SearchURL = 'http://zhannei.baidu.com/cse/search';
 let Fetcher = {
 
     recommand: function (cb) {
-        fetch('http://gank.io/api/search/query/listview/category/福利/count/10/page/1')
+        fetch('http://www.biquge.com')
             .then((response) => response.text())
             .then((responseText) => {
                 console.log(responseText);
+                Alert.alert(responseText);
             })
             .catch((error) => {
                 Alert.alert(JSON.stringify(error));
