@@ -4,7 +4,7 @@ import { View, Image, TextInput, Alert } from 'react-native';
 
 const screen = require('Dimensions').get('window');
 
-var searchIcon = require('../../ZZSrcs/search.png');
+const searchIcon = require('../../ZZAssets/search.png');
 
 class SearchBar extends Component {
 

@@ -1,5 +1,5 @@
 
-var Theme = {
+let Theme = {
     style: "Light"
 };
 

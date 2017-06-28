@@ -7,6 +7,7 @@ const Home = require('./ZZPages/Home');
 
 const NovelRN = StackNavigator({
     Home: { screen: Home },
+    Search: { screen: NovelSearch }
 });
 
 module.exports = NovelRN;

@@ -1,9 +1,9 @@
 
 import { StyleSheet } from 'react-native';
-var NovelSearchStyl = StyleSheet.create({
+const styles = StyleSheet.create({
     NovelSearch: {
         display: 'flex',
     }
 });
 
-module.exports = NovelSearchStyl;
+module.exports = styles;

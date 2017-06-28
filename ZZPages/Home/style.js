@@ -1,9 +1,13 @@
 
 import { StyleSheet } from 'react-native';
-var styles = StyleSheet.create({
+
+const styles = StyleSheet.create({
     Bookcase: {
         display: 'flex',
         flex: 1
+    },
+    ListView: {
+        justifyContent: 'space-around'
     }
 });
 
